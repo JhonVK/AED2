@@ -14,6 +14,7 @@ Arv* arv_cria();
 Arv* arv_insere(Arv* a, int v);
 void arv_libera(Arv* a);
 void arv_imprime(Arv* a);
+Arv* menor_valor(Arv* a);
 Arv* arv_busca_iterativa(Arv* a, int v);
 Arv* arv_busca_recursiva(Arv* a, int v);
 

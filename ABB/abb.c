@@ -38,6 +38,16 @@ void arv_imprime(Arv* a){
 
 }
 
+Arv* menor_valor(Arv* a){
+       
+    while(a->esq!=NULL){
+        a=a->esq;
+    } 
+    return a;
+ 
+
+}
+
 Arv* arv_busca_recursiva(Arv* r, int v) {
     if (r == NULL) {
         return NULL;

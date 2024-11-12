@@ -12,5 +12,9 @@ int main(){
     arv_insere(raiz, 15);
     arv_insere(raiz, 7);
     arv_imprime(raiz);
+    Arv *menor=(Arv *)malloc(sizeof(Arv));
+    menor=menor_valor(raiz);
+    printf("Menor Valor: %d", menor->info);
+    
     return 0;
 }
