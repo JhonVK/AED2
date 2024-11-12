@@ -37,7 +37,22 @@ void arv_imprime(Arv* a){
     arv_imprime(a->dir);
 
 }
+int maiores_que_x(Arv* a, int x){
+    int soma=0;
 
+    if(a->esq!=NULL){
+       soma+=+maiores_que_x(a->esq, x); 
+    }
+    
+    if(a->dir!=NULL){
+       soma+=maiores_que_x(a->dir, x); 
+    }
+
+    if (a->info>x){
+        soma += 1; 
+    } 
+    return soma;
+}
 Arv* menor_valor(Arv* a){
        
     while(a->esq!=NULL){

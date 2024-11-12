@@ -13,7 +13,9 @@ int main(){
     arv_insere(raiz, 7);
     arv_imprime(raiz);
     Arv *menor=menor_valor(raiz);
-    printf("Menor Valor: %d", menor->info);
+    printf("Menor Valor: %d\n", menor->info);
     
+    int quantMaior=maiores_que_x(raiz, 10);
+    printf("%d\n", quantMaior);
     return 0;
 }
