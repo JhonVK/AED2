@@ -28,6 +28,15 @@ void arv_libera(Arv* a) {
         free(a);
     }
 }
+void arv_imprime(Arv* a){
+    if(a==NULL){
+        return;
+    }
+    arv_imprime(a->esq);
+    printf("%d\n", a->info);
+    arv_imprime(a->dir);
+
+}
 
 Arv* arv_busca_recursiva(Arv* r, int v) {
     if (r == NULL) {
