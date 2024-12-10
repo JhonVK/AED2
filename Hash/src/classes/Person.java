@@ -2,9 +2,9 @@ package classes;
 
 public class Person {
     String nome;
-    String idade;
+    int idade;
 
-    public Person(String nome, String idade) {
+    public Person(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
     }
@@ -14,18 +14,15 @@ public class Person {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getIdade() {
+    public int getIdade() {
         return idade;
     }
-    public void setIdade(String idade) {
+    public void setIdade(int idade) {
         this.idade = idade;
     }
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((nome == null) ? 0 : nome.hashCode());
-        result = prime * result + ((idade == null) ? 0 : idade.hashCode());
+        int result= idade%100;
         return result;
     }
     @Override
@@ -42,13 +39,12 @@ public class Person {
                 return false;
         } else if (!nome.equals(other.nome))
             return false;
-        if (idade == null) {
-            if (other.idade != null)
-                return false;
-        } else if (!idade.equals(other.idade))
+        if (idade != other.idade)
             return false;
         return true;
     }
+
+    
 
 
 
