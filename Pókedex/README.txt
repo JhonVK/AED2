@@ -14,4 +14,22 @@ Este projeto é uma Pókedex, uma aplicação que permite visualizar informaçõ
 - Apache: Maeven
 - API: PókeAPI
 
-# Como d
+# Como Executar
+
+Clone o repositório:
+
+git clone https://github.com/JhonVK/AED2/tree/main/P%C3%B3kedex
+cd pokedex
+
+
+# Instale as dependências utilizando o Maven:
+
+mvn install
+
+#Compile o projeto:
+
+mvn compile
+
+#Execute a aplicação:
+
+mvn 

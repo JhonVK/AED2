@@ -38,7 +38,6 @@ public class App {
                 }
             }
             
-            
             switch(leituraInt){
                 case 1:
                 do{
